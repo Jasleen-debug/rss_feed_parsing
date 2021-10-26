@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="RSS Feed preferences">
+        <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="display_text"
+        android:summaryOff="Invisible"
+        android:summaryOn="Visible"
+        android:title="Display Text" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="display_image"
+            android:summaryOff="Invisible"
+            android:summaryOn="Visible"
+            android:title="Display Image" />
+
+    <ListPreference
+        android:defaultValue="pref_color_red_value"
+        android:entries="@array/pref_color_option_labels"
+        android:entryValues="@array/pref_color_option_values"
+        android:key="@string/pref_color_key"
+        android:title="Change Text Color" />
+
+    <EditTextPreference
+        android:defaultValue="@string/pref_size_default"
+        android:key="@string/pref_size_key"
+        android:title="Text Size" />
+    </PreferenceCategory>
+
+</PreferenceScreen>
